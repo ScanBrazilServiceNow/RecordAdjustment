@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $interval) {
+  /* widget controller */
+  var c = this;
+	
+	$interval(function(){
+		$scope.today = new Date();
+	},1000);
+	
+	console.log(c.data.weather)
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#bn-welcome h1{&#13;
+  font-weight: bold;&#13;
+  font-size: 64px;&#13;
+}&#13;
+#bn-welcome p{&#13;
+  font-size: 18px;&#13;
+}&#13;
+#cont-text{&#13;
+  padding: 100px 0px;&#13;
+}&#13;
+#today span{&#13;
+  font-size:84px;&#13;
+}&#13;
+#day{&#13;
+  font-size:28px;&#13;
+  position: relative;&#13;
+  bottom: 26px;&#13;
+}&#13;
+#HH{&#13;
+  font-weight: bold;&#13;
+}&#13;
+#today, .MM, .ss{&#13;
+  font-weight: 100;&#13;
+}&#13;
+&#13;
+.icon {&#13;
+  position: relative;&#13;
+  display: inline-block;&#13;
+  width: 8em;&#13;
+  height: 8em;&#13;
+  font-size: 1em; /* control icon size here */&#13;
+}&#13;
+&#13;
+.cloud {&#13;
+  position: absolute;&#13;
+  z-index: 1;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  width: 3.6875em;&#13;
+  height: 3.6875em;&#13;
+  margin: -1.84375em;&#13;
+  background: currentColor;&#13;
+  border-radius: 50%;&#13;
+  box-shadow:&#13;
+    -2.1875em 0.6875em 0 -0.6875em,&#13;
+    2.0625em 0.9375em 0 -0.9375em,&#13;
+    0 0 0 0.375em #fff,&#13;
+    -2.1875em 0.6875em 0 -0.3125em #fff,&#13;
+    2.0625em 0.9375em 0 -0.5625em #fff;&#13;
+}&#13;
+.cloud:after {&#13;
+  content: '';&#13;
+  position: absolute;&#13;
+  bottom: 0;&#13;
+  left: -0.5em;&#13;
+  display: block;&#13;
+  width: 4.5625em;&#13;
+  height: 1em;&#13;
+  background: currentColor;&#13;
+  box-shadow: 0 0.4375em 0 -0.0625em #fff;&#13;
+}&#13;
+.cloud:nth-child(2) {&#13;
+  z-index: 0;&#13;
+  background: #fff;&#13;
+  box-shadow:&#13;
+    -2.1875em 0.6875em 0 -0.6875em #fff,&#13;
+    2.0625em 0.9375em 0 -0.9375em #fff,&#13;
+    0 0 0 0.375em #fff,&#13;
+    -2.1875em 0.6875em 0 -0.3125em #fff,&#13;
+    2.0625em 0.9375em 0 -0.5625em #fff;&#13;
+  opacity: 0.3;&#13;
+  transform: scale(0.5) translate(6em, -3em);&#13;
+  animation: cloud 4s linear infinite;&#13;
+}&#13;
+.cloud:nth-child(2):after { background: #fff; }&#13;
+&#13;
+.sun {&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  width: 2.5em;&#13;
+  height: 2.5em;&#13;
+  margin: -1.25em;&#13;
+  /* background: currentColor; */&#13;
+  border-radius: 50%;&#13;
+  box-shadow: 0 0 0 0.375em #fff;&#13;
+  animation: spin 20s infinite linear;&#13;
+}&#13;
+.rays {&#13;
+  position: absolute;&#13;
+  top: -2em;&#13;
+  left: 50%;&#13;
+  display: block;&#13;
+  width: 0.375em;&#13;
+  height: 1.125em;&#13;
+  margin-left: -0.1875em;&#13;
+  background: #fff;&#13;
+  border-radius: 0.25em;&#13;
+  box-shadow: 0 5.375em #fff;&#13;
+}&#13;
+.rays:before,&#13;
+.rays:after {&#13;
+  content: '';&#13;
+  position: absolute;&#13;
+  top: 0em;&#13;
+  left: 0em;&#13;
+  display: block;&#13;
+  width: 0.375em;&#13;
+  height: 1.125em;&#13;
+  transform: rotate(60deg);&#13;
+  transform-origin: 50% 3.25em;&#13;
+  background: #fff;&#13;
+  border-radius: 0.25em;&#13;
+  box-shadow: 0 5.375em #fff;&#13;
+}&#13;
+.rays:before {&#13;
+  transform: rotate(120deg);&#13;
+}&#13;
+.cloud + .sun {&#13;
+  margin: -2em 1em;&#13;
+}&#13;
+&#13;
+.rain,&#13;
+.lightning,&#13;
+.snow {&#13;
+  position: absolute;&#13;
+  z-index: 2;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  width: 3.75em;&#13;
+  height: 3.75em;&#13;
+  margin: 0.375em 0 0 -2em;&#13;
+  /* background: currentColor; */&#13;
+}&#13;
+&#13;
+.rain:after {&#13;
+  content: '';&#13;
+  position: absolute;&#13;
+  z-index: 2;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  width: 1.125em;&#13;
+  height: 1.125em;&#13;
+  margin: -1em 0 0 -0.25em;&#13;
+  background: #0cf;&#13;
+  border-radius: 100% 0 60% 50% / 60% 0 100% 50%;&#13;
+  box-shadow:&#13;
+    0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),&#13;
+    -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),&#13;
+    -1.375em -0.125em 0 rgba(255,255,255,0.2);&#13;
+  transform: rotate(-28deg);&#13;
+  animation: rain 3s linear infinite;&#13;
+}&#13;
+&#13;
+.bolt {&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  margin: -0.25em 0 0 -0.125em;&#13;
+  color: #fff;&#13;
+  opacity: 0.3;&#13;
+  animation: lightning 2s linear infinite;&#13;
+}&#13;
+.bolt:nth-child(2) {&#13;
+  width: 0.5em;&#13;
+  height: 0.25em;&#13;
+  margin: -1.75em 0 0 -1.875em;&#13;
+  transform: translate(2.5em, 2.25em);&#13;
+  opacity: 0.2;&#13;
+  animation: lightning 1.5s linear infinite;&#13;
+}&#13;
+.bolt:before,&#13;
+.bolt:after {&#13;
+  content: '';&#13;
+  position: absolute;&#13;
+  z-index: 2;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  margin: -1.625em 0 0 -1.0125em;&#13;
+  border-top: 1.25em solid transparent;&#13;
+  border-right: 0.75em solid;&#13;
+  border-bottom: 0.75em solid;&#13;
+  border-left: 0.5em solid transparent;&#13;
+  transform: skewX(-10deg);&#13;
+}&#13;
+.bolt:after {&#13;
+  margin: -0.25em 0 0 -0.25em;&#13;
+  border-top: 0.75em solid;&#13;
+  border-right: 0.5em solid transparent;&#13;
+  border-bottom: 1.25em solid transparent;&#13;
+  border-left: 0.75em solid;&#13;
+  transform: skewX(-10deg);&#13;
+}&#13;
+.bolt:nth-child(2):before {&#13;
+  margin: -0.75em 0 0 -0.5em;&#13;
+  border-top: 0.625em solid transparent;&#13;
+  border-right: 0.375em solid;&#13;
+  border-bottom: 0.375em solid;&#13;
+  border-left: 0.25em solid transparent;&#13;
+}&#13;
+.bolt:nth-child(2):after {&#13;
+  margin: -0.125em 0 0 -0.125em;&#13;
+  border-top: 0.375em solid;&#13;
+  border-right: 0.25em solid transparent;&#13;
+  border-bottom: 0.625em solid transparent;&#13;
+  border-left: 0.375em solid;&#13;
+}&#13;
+&#13;
+.flake:before,&#13;
+.flake:after {&#13;
+  content: '\2744';&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  left: 50%;&#13;
+  margin: -1.025em 0 0 -1.0125em;&#13;
+  color: #fff;&#13;
+  list-height: 1em;&#13;
+  opacity: 0.2;&#13;
+  animation: spin 8s linear infinite reverse;&#13;
+}&#13;
+.flake:after {&#13;
+  margin: 0.125em 0 0 -1em;&#13;
+  font-size: 1.5em;&#13;
+  opacity: 0.4;&#13;
+  animation: spin 14s linear infinite;&#13;
+}&#13;
+.flake:nth-child(2):before {&#13;
+  margin: -0.5em 0 0 0.25em;&#13;
+  font-size: 1.25em;&#13;
+  opacity: 0.2;&#13;
+  animation: spin 10s linear infinite;&#13;
+}&#13;
+.flake:nth-child(2):after {&#13;
+  margin: 0.375em 0 0 0.125em;&#13;
+  font-size: 2em;&#13;
+  opacity: 0.4;&#13;
+  animation: spin 16s linear infinite reverse;&#13;
+}&#13;
+&#13;
+/* Animations */ &#13;
+&#13;
+@keyframes spin {&#13;
+  100% { transform: rotate(360deg); }&#13;
+}&#13;
+&#13;
+@keyframes cloud {&#13;
+  0% { opacity: 0; }&#13;
+  50% { opacity: 0.3; }&#13;
+  100% {&#13;
+    opacity: 0;&#13;
+    transform: scale(0.5) translate(-200%, -3em);&#13;
+  }&#13;
+}&#13;
+&#13;
+@keyframes rain {&#13;
+  0% {&#13;
+    background: #0cf;&#13;
+    box-shadow:&#13;
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -1.375em -0.125em 0 #0cf;&#13;
+  }&#13;
+  25% {&#13;
+    box-shadow:&#13;
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -0.875em 1.125em 0 -0.125em #0cf,&#13;
+      -1.375em -0.125em 0 rgba(255,255,255,0.2);&#13;
+  }&#13;
+  50% {&#13;
+    background: rgba(255,255,255,0.3);&#13;
+    box-shadow:&#13;
+      0.625em 0.875em 0 -0.125em #0cf,&#13;
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -1.375em -0.125em 0 rgba(255,255,255,0.2);&#13;
+  }&#13;
+  100% {&#13;
+    box-shadow:&#13;
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),&#13;
+      -1.375em -0.125em 0 #0cf;&#13;
+  }&#13;
+}&#13;
+&#13;
+@keyframes lightning {&#13;
+  45% {&#13;
+    color: #fff;&#13;
+    background: #fff;&#13;
+    opacity: 0.2;&#13;
+  }&#13;
+  50% {&#13;
+    color: #0cf;&#13;
+    background: #0cf;&#13;
+    opacity: 1;&#13;
+  }&#13;
+  55% {&#13;
+    color: #fff;&#13;
+    background: #fff;&#13;
+    opacity: 0.2;&#13;
+  }&#13;
+&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,class_name</field_list>
+        <has_preview>true</has_preview>
+        <id>welcome-banner</id>
+        <internal>false</internal>
+        <link/>
+        <name>welcome-banner</name>
+        <option_schema>[  &#13;
+   {  &#13;
+      "name":"text_color",&#13;
+      "section":"Presentation",&#13;
+      "label":"Text color",&#13;
+      "type":"choice",&#13;
+      "choices":[  &#13;
+         {  &#13;
+            "label":"white",&#13;
+            "value":"text-white"&#13;
+         },&#13;
+         {  &#13;
+            "label":"dark",&#13;
+            "value":"text-dark"&#13;
+         }&#13;
+      ]&#13;
+   }&#13;
+]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_308284_record_ad.HG Brasil', 'Default GET');
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		data.weather = JSON.parse(responseBody);
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>fernando.souza</sys_created_by>
+        <sys_created_on>2019-05-10 19:31:13</sys_created_on>
+        <sys_id>f7a654da4f91f30018a14d6e0210c7fa</sys_id>
+        <sys_mod_count>102</sys_mod_count>
+        <sys_name>welcome-banner</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_widget_f7a654da4f91f30018a14d6e0210c7fa</sys_update_name>
+        <sys_updated_by>fernando.souza</sys_updated_by>
+        <sys_updated_on>2019-05-14 14:25:18</sys_updated_on>
+        <template><![CDATA[<div id="bn-welcome">
+    <div id="cont-text" class="container text-center {{::options.text_color}}">
+        <h1>{{::options.title}}</h1>
+        <p>{{::options.short_description}}</p>
+      <div id="today" class="{{::options.text_color}}">
+        <span id="HH">{{today | date: 'HH'}}</span>
+        <span class="mm">:{{today | date: 'mm'}}</span>
+        <span class="ss">:{{today | date: 'ss'}}</span>
+        <div id="day" class="{{::options.class_name}}"> {{today | date: 'EEEE dd/MM/yyyy'}} </div>
+        
+        <div class="icon sunny">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+        
+        <div id="weather">
+          <div class="row">
+            <div class="icon cloudy" ng-show="c.data.weather.results.description == 'Parcialmente nublado'">
+              <div class="cloud"></div>
+              <div class="cloud"></div>
+            </div>
+            <div class="w-data">
+              <div id="w-temp">
+                {{c.data.weather.results.temp}}°C
+              </div>
+              <div id="w-humidity">
+                {{c.data.weather.results.humidity}}%
+              </div>
+              <div id="w-wind-speedy">
+                {{c.data.weather.results.wind_speedy}}
+              </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="alert alert-info">
+          {{c.data.weather}}
+        </div>
+        
+      </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

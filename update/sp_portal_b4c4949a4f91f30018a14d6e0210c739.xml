@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="site">3e94109a4f91f30018a14d6e0210c731</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SBC Header Menu">3e9d378613d9b3005aacbd722244b03c</sp_rectangle_menu>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>fernando.souza</sys_created_by>
+        <sys_created_on>2019-05-10 19:23:19</sys_created_on>
+        <sys_id>b4c4949a4f91f30018a14d6e0210c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Site</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_portal_b4c4949a4f91f30018a14d6e0210c739</sys_update_name>
+        <sys_updated_by>fernando.souza</sys_updated_by>
+        <sys_updated_on>2019-05-10 19:24:03</sys_updated_on>
+        <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
+        <title>Site</title>
+        <url_suffix>st</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4c4949a4f91f30018a14d6e0210c739"/>
+</record_update>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>other</category>
-        <css>section.page {&#13;
-	background-color: $sp-homepage-bg;&#13;
-}&#13;
-section.page, main.body {&#13;
-    padding-top: 0px !important;&#13;
-}&#13;
-</css>
+        <css>section.page {
+	background-color: $sp-homepage-bg;
+}
+section.page, main.body {
+    padding-top: 0px !important;
+}
+.col-md-12{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}</css>
         <draft>false</draft>
         <dynamic_title_structure/>
         <id>scan_brazil_consulting</id>
@@ -19,14 +22,14 @@ section.page, main.body {&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-06 15:08:49</sys_created_on>
         <sys_id>c9447e3c4f513300a1e6a88ca310c728</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>scan_brazil_consulting</sys_name>
         <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
         <sys_update_name>sp_page_c9447e3c4f513300a1e6a88ca310c728</sys_update_name>
-        <sys_updated_by>fernando.souza</sys_updated_by>
-        <sys_updated_on>2019-05-07 20:17:41</sys_updated_on>
+        <sys_updated_by>pablo.garcia</sys_updated_by>
+        <sys_updated_on>2019-05-09 20:31:20</sys_updated_on>
         <title>Scan Brazil Consulting</title>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=c9447e3c4f513300a1e6a88ca310c728"/>

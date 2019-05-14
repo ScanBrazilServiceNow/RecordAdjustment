@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Cart layout" section_id="43b0ea834f19730018a14d6e0210c735" sys_domain="global" table="sc_cat_item" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>use_sc_layout</element>
+            <position>0</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>e2d06a834f19730018a14d6e0210c778</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_cart</element>
+            <position>1</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>e2d0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_order</element>
+            <position>2</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>66d0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_order_now</element>
+            <position>3</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>e6d0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_proceed_checkout</element>
+            <position>4</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>6ad0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_quantity</element>
+            <position>5</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>ead0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no_search</element>
+            <position>6</position>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:30:20</sys_created_on>
+            <sys_id>6ed0a2c34f19730018a14d6e0210c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cart layout" display_value="Cart layout" name="sc_cat_item" sys_domain="global" view="Default view">43b0ea834f19730018a14d6e0210c735</sys_ui_section>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:30:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Cart layout</caption>
+            <header>false</header>
+            <name>sc_cat_item</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>andre.mello</sys_created_by>
+            <sys_created_on>2019-05-13 13:29:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43b0ea834f19730018a14d6e0210c735</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Cart layout</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+            <sys_update_name>sys_ui_section_43b0ea834f19730018a14d6e0210c735</sys_update_name>
+            <sys_updated_by>andre.mello</sys_updated_by>
+            <sys_updated_on>2019-05-13 13:29:49</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">84eabf1b4f15b30018a14d6e0210c77c</sp_column>
+        <sp_widget display_value="KB Most Viewed">7d903b52cb30020000f8d856634c9ce3</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>pablo.garcia</sys_created_by>
+        <sys_created_on>2019-05-14 14:42:08</sys_created_on>
+        <sys_id>4ceabf1b4f15b30018a14d6e0210c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Most Viewed Articles</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_instance_4ceabf1b4f15b30018a14d6e0210c798</sys_update_name>
+        <sys_updated_by>pablo.garcia</sys_updated_by>
+        <sys_updated_on>2019-05-14 14:42:08</sys_updated_on>
+        <title>Most Viewed Articles</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ceabf1b4f15b30018a14d6e0210c798"/>
+</record_update>

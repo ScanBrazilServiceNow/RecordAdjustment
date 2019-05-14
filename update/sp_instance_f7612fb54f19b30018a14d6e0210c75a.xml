@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">919327394f19b30018a14d6e0210c714</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>pablo.garcia</sys_created_by>
+        <sys_created_on>2019-05-09 21:00:05</sys_created_on>
+        <sys_id>f7612fb54f19b30018a14d6e0210c75a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_instance_f7612fb54f19b30018a14d6e0210c75a</sys_update_name>
+        <sys_updated_by>andre.mello</sys_updated_by>
+        <sys_updated_on>2019-05-10 19:57:05</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div style=\"padding: 130px 0px;\">\n<p style=\"text-align: center; color: #252525; font-size: 70px;\"><strong>Bem-Vindo</strong></p>\n<p style=\"text-align: center; color: #252525; font-size: 40px;\"><strong>Portal Scan Brazil Consulting</strong></p>\n</div>",
+		"displayValue": "<div style=\"padding: 130px 0px;\">\n<p style=\"text-align: center; color: #252525; font-size: 70px;\"><strong>Bem-Vindo</strong></p>\n<p style=\"text-align: center; color: #252525; font-size: 40px;\"><strong>Portal Scan Brazil Consulting</strong></p>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=f7612fb54f19b30018a14d6e0210c75a"/>
+</record_update>

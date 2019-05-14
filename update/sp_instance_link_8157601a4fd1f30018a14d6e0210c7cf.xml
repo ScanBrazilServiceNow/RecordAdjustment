@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>star</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Descrição do icone</short_description>
+        <size>md</size>
+        <sp_column display_value="2">0edb9cde4f91f30018a14d6e0210c7a0</sp_column>
+        <sp_page/>
+        <sp_widget display_value="float icon">aed9989e4f91f30018a14d6e0210c760</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>fernando.souza</sys_created_by>
+        <sys_created_on>2019-05-10 20:43:56</sys_created_on>
+        <sys_id>8157601a4fd1f30018a14d6e0210c7cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Nome Icone 2</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_instance_link_8157601a4fd1f30018a14d6e0210c7cf</sys_update_name>
+        <sys_updated_by>fernando.souza</sys_updated_by>
+        <sys_updated_on>2019-05-10 20:47:46</sys_updated_on>
+        <title>Nome Icone 2</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=8157601a4fd1f30018a14d6e0210c7cf"/>
+</record_update>

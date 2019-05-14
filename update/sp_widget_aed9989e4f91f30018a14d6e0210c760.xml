@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#floating-triggers{&#13;
+    position: relative;&#13;
+    bottom: 28px;&#13;
+}&#13;
+&#13;
+.icon-trigger{&#13;
+    padding: 20px 40px;&#13;
+}&#13;
+.icon-trigger i {&#13;
+    font-size: 32px;&#13;
+}&#13;
+.icon-trigger{&#13;
+    cursor: pointer;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,color,glyph,sp_page,sys_scope,widget_parameters</field_list>
+        <has_preview>false</has_preview>
+        <id>float_icon</id>
+        <internal>false</internal>
+        <link/>
+        <name>float icon</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(){
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>fernando.souza</sys_created_by>
+        <sys_created_on>2019-05-10 19:45:04</sys_created_on>
+        <sys_id>aed9989e4f91f30018a14d6e0210c760</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>float icon</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_widget_aed9989e4f91f30018a14d6e0210c760</sys_update_name>
+        <sys_updated_by>fernando.souza</sys_updated_by>
+        <sys_updated_on>2019-05-13 13:47:01</sys_updated_on>
+        <template><![CDATA[<div id="floating-triggers">
+    <div class="icon-trigger text-center btn-{{::options.color}}">
+        <i class="fa fa-{{::options.glyph}}"></i>
+        <div>
+            <p><b>{{::options.title}}</b></p>
+            <p>{{::options.short_description}}</p>
+        </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

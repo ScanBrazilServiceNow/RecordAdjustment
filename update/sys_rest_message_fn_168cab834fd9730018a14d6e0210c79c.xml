@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+	"companyName": "${companyName}"&#13;
+}</content>
+        <function_name>Get Company</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Custom Google Search [ Get Company ]</qualified_name>
+        <rest_endpoint>https://robotdigger.herokuapp.com/api/</rest_endpoint>
+        <rest_message display_value="Custom Google Search">c16c2b834fd9730018a14d6e0210c70c</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>pablo.garcia</sys_created_by>
+        <sys_created_on>2019-05-13 19:01:00</sys_created_on>
+        <sys_id>168cab834fd9730018a14d6e0210c79c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Get Company</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sys_rest_message_fn_168cab834fd9730018a14d6e0210c79c</sys_update_name>
+        <sys_updated_by>pablo.garcia</sys_updated_by>
+        <sys_updated_on>2019-05-13 19:26:47</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

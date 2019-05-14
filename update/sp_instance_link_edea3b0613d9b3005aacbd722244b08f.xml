@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>book</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Informações, protocolos e modelos da empresa</short_description>
+        <size>md</size>
+        <sp_column display_value="1">b8b1efb54f19b30018a14d6e0210c79e</sp_column>
+        <sp_page/>
+        <sp_widget display_value="SBC-Icon Link">307a730613d9b3005aacbd722244b0ba</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>andre.mello</sys_created_by>
+        <sys_created_on>2019-05-10 17:29:50</sys_created_on>
+        <sys_id>edea3b0613d9b3005aacbd722244b08f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Wiki</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_instance_link_edea3b0613d9b3005aacbd722244b08f</sys_update_name>
+        <sys_updated_by>andre.mello</sys_updated_by>
+        <sys_updated_on>2019-05-10 17:35:37</sys_updated_on>
+        <title>Wiki</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=edea3b0613d9b3005aacbd722244b08f"/>
+</record_update>

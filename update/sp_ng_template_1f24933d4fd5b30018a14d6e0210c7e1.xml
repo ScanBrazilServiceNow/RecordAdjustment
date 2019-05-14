@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>scan-item-added-tooltip.html</id>
+        <sp_widget/>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>pablo.garcia</sys_created_by>
+        <sys_created_on>2019-05-09 20:02:45</sys_created_on>
+        <sys_id>1f24933d4fd5b30018a14d6e0210c7e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scan-item-added-tooltip.html</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_ng_template_1f24933d4fd5b30018a14d6e0210c7e1</sys_update_name>
+        <sys_updated_by>pablo.garcia</sys_updated_by>
+        <sys_updated_on>2019-05-09 20:02:45</sys_updated_on>
+        <template><![CDATA[<div ng-click="toggleCart()" class="item-added-tooltip">${Item has been added to your cart.}</div>]]></template>
+    </sp_ng_template>
+</record_update>

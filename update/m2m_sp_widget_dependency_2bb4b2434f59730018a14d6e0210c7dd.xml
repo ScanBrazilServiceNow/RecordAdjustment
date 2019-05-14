@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency>
+        <sp_widget display_value="SBC Header Menu">67b4b2434f59730018a14d6e0210c7db</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>andre.mello</sys_created_by>
+        <sys_created_on>2019-05-13 14:57:14</sys_created_on>
+        <sys_id>2bb4b2434f59730018a14d6e0210c7dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>angular-truncate.Copy of Header Menu</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_2bb4b2434f59730018a14d6e0210c7dd</sys_update_name>
+        <sys_updated_by>andre.mello</sys_updated_by>
+        <sys_updated_on>2019-05-13 14:57:14</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

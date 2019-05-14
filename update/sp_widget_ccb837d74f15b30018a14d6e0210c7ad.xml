@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.list-group-item {
+  padding: 0;
+  border: none;
+  margin-bottom: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>false</has_preview>
+        <id>scan_kb_most_viewed</id>
+        <internal>false</internal>
+        <link/>
+        <name>Scan KB Most Viewed</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("Most Viewed Articles");
+	var z = $sp.getKBRecord();
+	z.addQuery("sys_view_count", ">", "0");
+	if (options.kb_category)
+		z.addQuery("kb_category", options.kb_category);
+	z.orderByDesc('sys_view_count');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,published');
+		data.articles.push(a);
+	}
+})()
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>pablo.garcia</sys_created_by>
+        <sys_created_on>2019-05-14 14:32:34</sys_created_on>
+        <sys_id>ccb837d74f15b30018a14d6e0210c7ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scan KB Most Viewed</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_widget_ccb837d74f15b30018a14d6e0210c7ad</sys_update_name>
+        <sys_updated_by>pablo.garcia</sys_updated_by>
+        <sys_updated_on>2019-05-14 14:32:34</sys_updated_on>
+        <template><![CDATA[<sp-panel ng-if="data.articles.length > 0" >
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="a in data.articles">
+      <a href="?id=kb_article&sys_id={{::a.sys_id}}">{{::a.short_description}}</a>
+      <div>
+        <span ng-if="a.sys_view_count == 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right" />
+          ${{{::a.sys_view_count}} View}
+        </span>
+        <span ng-if="a.sys_view_count > 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right" />
+          ${{{::a.sys_view_count}} Views}
+        </span>
+        <span ng-if="false" class="published pad-right">
+          <span ng-if="a.sys_view_count > 0" class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right" />
+          <sn-day-ago date="a.published"/>
+        </span>
+      </div>
+    </li>
+  </ul>
+</sp-panel>]]></template>
+    </sp_widget>
+</record_update>
