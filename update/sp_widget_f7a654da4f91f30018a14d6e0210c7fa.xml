@@ -37,11 +37,24 @@
   font-weight: 100;&#13;
 }&#13;
 &#13;
+.w-data{&#13;
+  padding:8px;&#13;
+  text-align: right;&#13;
+}&#13;
+#w-temp{&#13;
+  font-size: 34px;&#13;
+  font-weight: bold;&#13;
+}&#13;
+#weather{&#13;
+  position:relative;&#13;
+  left:40%;&#13;
+}&#13;
+&#13;
 .icon {&#13;
   position: relative;&#13;
   display: inline-block;&#13;
   width: 8em;&#13;
-  height: 8em;&#13;
+  height: 7em;&#13;
   font-size: 1em; /* control icon size here */&#13;
 }&#13;
 &#13;
@@ -365,14 +378,14 @@
         <sys_created_by>fernando.souza</sys_created_by>
         <sys_created_on>2019-05-10 19:31:13</sys_created_on>
         <sys_id>f7a654da4f91f30018a14d6e0210c7fa</sys_id>
-        <sys_mod_count>102</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_name>welcome-banner</sys_name>
         <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
         <sys_update_name>sp_widget_f7a654da4f91f30018a14d6e0210c7fa</sys_update_name>
         <sys_updated_by>fernando.souza</sys_updated_by>
-        <sys_updated_on>2019-05-14 14:25:18</sys_updated_on>
+        <sys_updated_on>2019-05-14 15:34:13</sys_updated_on>
         <template><![CDATA[<div id="bn-welcome">
     <div id="cont-text" class="container text-center {{::options.text_color}}">
         <h1>{{::options.title}}</h1>
@@ -383,29 +396,35 @@
         <span class="ss">:{{today | date: 'ss'}}</span>
         <div id="day" class="{{::options.class_name}}"> {{today | date: 'EEEE dd/MM/yyyy'}} </div>
         
-        <div class="icon sunny">
-          <div class="sun">
-            <div class="rays"></div>
-          </div>
-        </div>
         
-        <div id="weather">
-          <div class="row">
-            <div class="icon cloudy" ng-show="c.data.weather.results.description == 'Parcialmente nublado'">
-              <div class="cloud"></div>
-              <div class="cloud"></div>
+		
+        <div class="row">
+          <div id="weather">
+            <div class="pull-left">
+              
+              <!--<div class="icon cloudy" ng-if="c.data.weather.results.condition_slug == 'cloud'">
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+              </div>-->
+              
+              <div class="icon sunny">
+                <div class="sun">
+                  <div class="rays"></div>
+                </div>
+              </div>
+              
             </div>
-            <div class="w-data">
+
+            <div class="w-data pull-left">
               <div id="w-temp">
                 {{c.data.weather.results.temp}}°C
               </div>
-              <div id="w-humidity">
-                {{c.data.weather.results.humidity}}%
-              </div>
-              <div id="w-wind-speedy">
-                {{c.data.weather.results.wind_speedy}}
-              </div>
+              <small>
+                <div>Umidade: {{c.data.weather.results.humidity}}%</div>
+                <div>Vento: {{c.data.weather.results.wind_speedy}}</div>
+              </small>
             </div>
+            
           </div>
         </div>
                 
