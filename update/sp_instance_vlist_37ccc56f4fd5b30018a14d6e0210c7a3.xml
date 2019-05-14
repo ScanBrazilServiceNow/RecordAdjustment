@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>opened_by</display_field>
+        <field_list/>
+        <filter table="sc_req_item">state=1^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="false" field="opened_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">973909ab4fd5b30018a14d6e0210c77d</sp_column>
+        <sp_page display_value="requests">31ed6a51d7130200a9ad1e173e24d479</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>andre.mello</sys_created_by>
+        <sys_created_on>2019-05-14 20:40:06</sys_created_on>
+        <sys_id>37ccc56f4fd5b30018a14d6e0210c7a3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Request in progress</sys_name>
+        <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
+        <sys_update_name>sp_instance_vlist_37ccc56f4fd5b30018a14d6e0210c7a3</sys_update_name>
+        <sys_updated_by>andre.mello</sys_updated_by>
+        <sys_updated_on>2019-05-14 20:43:55</sys_updated_on>
+        <table>sc_req_item</table>
+        <title>Request in progress</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "number",
+		"displayValue": "number"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=37ccc56f4fd5b30018a14d6e0210c7a3"/>
+</record_update>
