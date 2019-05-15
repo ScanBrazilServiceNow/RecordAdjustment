@@ -13,7 +13,7 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description>Solicitações de produtos de limpeza e consumíveis</short_description>
+        <short_description>Requests for cleaning products and consumables</short_description>
         <size>md</size>
         <sp_column display_value="3">78b1efb54f19b30018a14d6e0210c7a1</sp_column>
         <sp_page/>
@@ -22,15 +22,15 @@
         <sys_created_by>andre.mello</sys_created_by>
         <sys_created_on>2019-05-10 17:36:12</sys_created_on>
         <sys_id>f65cf74613d9b3005aacbd722244b0dc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Pedidos</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Product Requests</sys_name>
         <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
         <sys_update_name>sp_instance_link_f65cf74613d9b3005aacbd722244b0dc</sys_update_name>
         <sys_updated_by>andre.mello</sys_updated_by>
-        <sys_updated_on>2019-05-10 19:15:25</sys_updated_on>
-        <title>Pedidos</title>
+        <sys_updated_on>2019-05-14 21:04:37</sys_updated_on>
+        <title>Product Requests</title>
         <type>page</type>
         <url/>
         <widget_parameters><![CDATA[{

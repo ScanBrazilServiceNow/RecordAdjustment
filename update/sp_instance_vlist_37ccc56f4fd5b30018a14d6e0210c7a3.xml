@@ -26,16 +26,16 @@
         <sys_created_by>andre.mello</sys_created_by>
         <sys_created_on>2019-05-14 20:40:06</sys_created_on>
         <sys_id>37ccc56f4fd5b30018a14d6e0210c7a3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Request in progress</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Requested in progress</sys_name>
         <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
         <sys_update_name>sp_instance_vlist_37ccc56f4fd5b30018a14d6e0210c7a3</sys_update_name>
         <sys_updated_by>andre.mello</sys_updated_by>
-        <sys_updated_on>2019-05-14 20:43:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 16:38:18</sys_updated_on>
         <table>sc_req_item</table>
-        <title>Request in progress</title>
+        <title>Requested in progress</title>
         <url/>
         <widget_parameters><![CDATA[{
 	"always_show": {
@@ -51,8 +51,8 @@
 		"displayValue": ""
 	},
 	"secondary_fields": {
-		"value": "number",
-		"displayValue": "number"
+		"value": "number,cat_item",
+		"displayValue": "number,cat_item"
 	},
 	"rounded_images": {
 		"value": "",

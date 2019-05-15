@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
     <sp_container action="INSERT_OR_UPDATE">
-        <background_color>#ffffff</background_color>
+        <background_color/>
         <background_image/>
         <background_style>default</background_style>
         <bootstrap_alt>false</bootstrap_alt>
-        <class_name>padder-b-lg</class_name>
+        <class_name>m-t-none</class_name>
         <container_class_name/>
-        <name>Scan Brazil Consulting - Container 2</name>
-        <order>2</order>
+        <name>Scan Brazil Consulting - Container 6</name>
+        <order>6</order>
         <sp_page display_value="scan_brazil_consulting">c9447e3c4f513300a1e6a88ca310c728</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>
-        <sys_created_by>pablo.garcia</sys_created_by>
-        <sys_created_on>2019-05-09 21:01:10</sys_created_on>
-        <sys_id>27a1efb54f19b30018a14d6e0210c754</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Scan Brazil Consulting - Container 2</sys_name>
+        <sys_created_by>andre.mello</sys_created_by>
+        <sys_created_on>2019-05-15 14:40:08</sys_created_on>
+        <sys_id>a80485734f11f30018a14d6e0210c7dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Scan Brazil Consulting - Container 6</sys_name>
         <sys_package display_value="Record Adjustment" source="x_308284_record_ad">498feeb44f513300a1e6a88ca310c70b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Record Adjustment">498feeb44f513300a1e6a88ca310c70b</sys_scope>
-        <sys_update_name>sp_container_27a1efb54f19b30018a14d6e0210c754</sys_update_name>
+        <sys_update_name>sp_container_a80485734f11f30018a14d6e0210c7dc</sys_update_name>
         <sys_updated_by>andre.mello</sys_updated_by>
-        <sys_updated_on>2019-05-15 14:03:07</sys_updated_on>
+        <sys_updated_on>2019-05-15 16:02:15</sys_updated_on>
         <title/>
-        <width>container</width>
+        <width>container-fluid</width>
     </sp_container>
 </record_update>
